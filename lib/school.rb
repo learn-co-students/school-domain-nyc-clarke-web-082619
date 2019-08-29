@@ -17,13 +17,15 @@ roster[grade]
 end
 
 def sort
-# roster.sort {|k,v| -k}
+    sorted_students = {}
+roster.each do |key,value|
+    sorted_students[key]=value.sort
+    end
+return sorted_students
+end
 
-    roster.sort.to_h
 end
 
 
 
-
-
-end
+#roster.sort.to_h
